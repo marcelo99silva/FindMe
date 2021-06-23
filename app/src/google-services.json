@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "637691504062",
+    "firebase_url": "https://findme-a27f9-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "findme-a27f9",
+    "storage_bucket": "findme-a27f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637691504062:android:3e32c64bce5464d9ae45ef",
+        "android_client_info": {
+          "package_name": "com.example.testefirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637691504062-q32ga96avmrdagc2kltf0iounen5h1qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGpMrb_c2AUnDn4FiJ1rOicTwCMqRDGDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637691504062-q32ga96avmrdagc2kltf0iounen5h1qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637691504062:android:f8e0295c42319256ae45ef",
+        "android_client_info": {
+          "package_name": "ipvc.estg.findme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637691504062-q32ga96avmrdagc2kltf0iounen5h1qf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGpMrb_c2AUnDn4FiJ1rOicTwCMqRDGDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637691504062-q32ga96avmrdagc2kltf0iounen5h1qf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

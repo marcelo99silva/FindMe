@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FindMe</string>
+    <string name="login2">Efetue o seu Login:</string>
+    <string name="intro">Bem-Vindo ao Veggie You!</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="registo"><u>Novo Utilizador? Criar Conta</u></string>
+    <string name="botao_registar">Registar</string>
+    <string name="login">Login</string>
+</resources>

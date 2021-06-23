@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:background="@color/fundo">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".InserirAparecimento">
+
+                <RelativeLayout
+                    android:id="@+id/layout"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp">
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="Encontrado"
+                            android:textColor="#FFB703"
+                            android:textSize="50dp" />
+
+                        <ImageView
+                            android:id="@+id/imagemAP"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/txt"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/input_multiline"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imagemAP"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingTop="10px"
+                            android:paddingBottom="50px"
+                            app:layout_constraintTop_toBottomOf="@+id/imagemAP"/>
+
+                        <TextView
+                            android:id="@+id/txt_raca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearLayout"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Raça"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:layout_marginStart="25dp" />
+
+                        <EditText
+                            android:id="@+id/ed_txt_racaAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_raca"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/txt_raca"
+                            android:background="@drawable/edit_text_border"
+                            android:lines="2"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_toEndOf="@+id/txt_raca" />
+
+                        <TextView
+                            android:id="@+id/txt_sexo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed_txt_racaAP"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Sexo"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:layout_marginStart="25dp" />
+
+                        <EditText
+                            android:id="@+id/ed_txt_sexoAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_sexo"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="200dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/edit_text_border"
+                            android:lines="2"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="200dp"
+                            android:inputType="none"
+                            android:focusable="false" />
+
+                        <TextView
+                            android:id="@+id/txt_tamanho"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed_txt_racaAP"
+                            android:layout_alignLeft="@+id/txt_sexo"
+                            android:layout_marginLeft="175dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Tamanho"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:layout_alignStart="@+id/txt_sexo"
+                            android:layout_marginStart="175dp" />
+
+                        <EditText
+                            android:id="@+id/ed_txt_tamanhoAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_tamanho"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/txt_tamanho"
+                            android:background="@drawable/edit_text_border"
+                            android:lines="2"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="200dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_toEndOf="@+id/txt_tamanho"
+                            android:inputType="none"
+                            android:focusable="false" />
+
+                        <TextView
+                            android:id="@+id/txt_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed_txt_sexoAP"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Data do desaparecimento"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:layout_marginStart="25dp" />
+
+                        <EditText
+                            android:id="@+id/ed_txt_dataAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_data"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/txt_data"
+                            android:background="@drawable/edit_text_border"
+                            android:lines="2"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:paddingTop="15px"
+                            android:paddingBottom="30px"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="20dp"
+                            android:inputType="none"
+                            android:focusable="false" />
+
+                        <TextView
+                            android:id="@+id/txt_localizacao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed_txt_dataAP"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Ultima localização:"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:layout_marginStart="25dp" />
+
+                        <EditText
+                            android:id="@+id/ed_txt_localizacaoAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_localizacao"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/txt_data"
+                            android:background="@drawable/edit_text_border"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:paddingTop="15px"
+                            android:paddingBottom="30px"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_toEndOf="@+id/txt_data"
+                            android:inputType="none"
+                            android:focusable="false" />
+
+                        <TextView
+                            android:id="@+id/txt_descricao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed_txt_localizacaoAP"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Descrição"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:layout_marginStart="25dp" />
+
+                        <EditText
+                            android:id="@+id/ed_txt_descricaoAP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txt_descricao"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/edit_text_border"
+                            android:lines="7"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="20dp"
+                            android:inputType="none"
+                            android:focusable="false" />
+
+                        <Button
+                            android:id="@+id/btn_encontrar_animal"
+                            android:layout_width="@dimen/DP01"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ed_txt_descricaoAP"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="@drawable/button_shape"
+                            android:text="Encontrei o seu animal"
+                            app:backgroundTint="@color/yellow" />
+
+                </RelativeLayout>
+
+        </ScrollView>
+
+
+</RelativeLayout>

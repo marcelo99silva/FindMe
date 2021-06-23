@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.MainActivity"
+    android:background="@color/fundo">
+
+
+
+    <ImageView
+        android:id="@+id/imagem1"
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/DP03"
+        android:layout_marginLeft="@dimen/DP03"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/textView_02"
+        style="@style/textoNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagem1"
+        android:layout_marginStart="@dimen/DP03"
+        android:layout_marginLeft="@dimen/DP03"
+        android:layout_marginTop="60dp"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/insertUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_02"
+        android:layout_marginStart="@dimen/DP03"
+        android:layout_marginLeft="@dimen/DP03"
+        android:layout_marginEnd="@dimen/DP03"
+        android:layout_marginRight="@dimen/DP03"
+        android:lines="2"
+        android:background="@drawable/edit_text_border"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"/>
+
+    <TextView
+        style="@style/textoNormal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insertUser"
+        android:layout_marginStart="@dimen/DP03"
+        android:layout_marginLeft="@dimen/DP03"
+        android:text="@string/password"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+
+        android:id="@+id/insertPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_03"
+        android:layout_marginStart="@dimen/DP03"
+        android:layout_marginLeft="@dimen/DP03"
+        android:layout_marginEnd="@dimen/DP03"
+        android:layout_marginRight="@dimen/DP03"
+        android:background="@drawable/edit_text_border"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:lines="2" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="@dimen/DP01"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insertPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/login"
+        app:backgroundTint="@color/button" />
+
+    <TextView
+        style="@style/textoNormal"
+        android:id="@+id/textView_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registo"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:clickable="true"/>
+
+
+
+
+
+
+   <!-- <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU TESTE"
+        android:onClick="irMenu"/>-->
+
+</RelativeLayout>
